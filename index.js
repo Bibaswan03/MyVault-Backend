@@ -18,7 +18,7 @@ conndb();
 app.use(express.json());
 app.use(cors());
 
-app.get("/hello", (req, res) => {
+app.get("/", (req, res) => {
   res.status(200).send("Hello");
 });
 app.post("/signup", async (req, res) => {
