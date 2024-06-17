@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.status(200).send("Hello");
+  res.status(200).json({name:"Hello server!"});
 });
 app.post("/signup", async (req, res) => {
   try {
